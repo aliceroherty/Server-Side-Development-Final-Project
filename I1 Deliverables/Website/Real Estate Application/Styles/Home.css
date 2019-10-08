@@ -1,0 +1,17 @@
+﻿#home_img {
+    width: 100%;
+}
+
+#stellar {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #welcome {
+        display: none;
+    }
+
+    #stellar {
+        display: inline-block;
+    }
+}

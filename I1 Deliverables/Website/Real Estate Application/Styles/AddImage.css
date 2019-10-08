@@ -1,0 +1,46 @@
+﻿#btn {
+    width: 30%;
+    height: 3.5em;
+    color: #000000;
+    border: none;
+    border-radius: 3em;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: background-color ease-in-out 200ms;
+    margin-top: 1em;
+}
+
+#btn:hover {
+   background-color: #b8b8b8;
+   color: #3d3d3d;
+}
+
+.img {
+    border: solid 2px white;
+    margin: 2em 1em 2em 1em;
+    width: 500px;
+    height: 500px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#btn_container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 700px) {
+    #btn_container {
+        flex-direction: column;
+    }
+
+    #btn {
+        width: 100%;
+    }
+}

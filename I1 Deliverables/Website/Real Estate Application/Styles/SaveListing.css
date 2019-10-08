@@ -1,0 +1,176 @@
+﻿.full_child {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#btn_Search {
+    width: 50%;
+    height: 3.5em;
+    color: #000000;
+    border: none;
+    border-radius: 3em;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: background-color ease-in-out 200ms;
+}
+
+#btn_Search:hover {
+    background-color: #b8b8b8;
+    color: #3d3d3d;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 42.5%;
+}
+
+.input_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+label {
+    text-align: right;
+    display: inline-block;
+}
+
+input {
+    min-width: 90%;
+    border-radius: 0.5em;
+    color: #000;
+    padding: 0 1em 0 1em;
+    border: 2px solid #616161;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .parent {
+        flex-direction: column !important;
+        justify-content: center;
+    }
+
+    input {
+        min-width: 80%;
+    }
+
+    .child {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 991px) {
+    .parent {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    input {
+        min-width: 70%;
+    }
+
+    .child {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 646px) and (max-width: 800px) {
+    .parent {
+        flex-direction: column !important;
+        justify-content: center;
+    }
+
+    input {
+        min-width: 70%;
+    }
+
+    .child {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 486px) and (max-width: 645px) {
+    .parent {
+        flex-direction: column !important;
+        justify-content: center;
+    }
+
+    input {
+        min-width: 70%;
+    }
+
+    .child {
+        width: 100%;
+    }
+
+    #btn_Search {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 485px) {
+    .parent {
+        flex-direction: column !important;
+        justify-content: center;
+    }
+
+    input {
+        min-width: 70%;
+    }
+
+    .child {
+        width: 100%;
+    }
+
+    #btn_Search {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 351px) and (max-width: 420px) {
+    .parent {
+        flex-direction: column !important;
+        justify-content: center;
+    }
+
+    input {
+        min-width: 40%;
+    }
+
+    .child {
+        width: 100%;
+    }
+
+    #btn_Search {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 350px) {
+    .parent {
+        flex-direction: column !important;
+        justify-content: center;
+    }
+
+    input {
+        min-width: 20%;
+    }
+
+    .child {
+        width: 100%;
+    }
+
+    #btn_Search {
+        width: 100%;
+    }
+}

@@ -1,0 +1,61 @@
+﻿@section Styles {
+    <link href="~/Styles/CustomerResults.css" rel="stylesheet" type="text/css" />
+}
+
+@section Scripts {
+    <script src="~/Scripts/table.js"></script>
+}
+
+@using (Html.BeginForm())
+{
+    <h1>Search Results</h1>
+    <table>
+        <tr id="heading_row">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+            <th>Street Address</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>1(800)888-8888</td>
+            <td>543 Queen Street</td>
+            <td>Fredericton</td>
+        </tr>
+        <tr>
+            <td>Jim</td>
+            <td>Doe</td>
+            <td>1(800)888-8888</td>
+            <td>543 Mountain Road</td>
+            <td>Moncton</td>
+        </tr>
+        <tr>
+            <td>Jack</td>
+            <td>Doe</td>
+            <td>1(800)888-8888</td>
+            <td>123 King Street</td>
+            <td>Saint John</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>Doe</td>
+            <td>1(800)888-8888</td>
+            <td>987 Ipsum Street</td>
+            <td>Bathurst</td>
+        </tr>
+        <tr>
+            <td>Jake</td>
+            <td>Doe</td>
+            <td>1(800)888-8888</td>
+            <td>987 Lorum Drive</td>
+            <td>Moncton</td>
+        </tr>
+    </table>
+    <div class="btn_container">
+        <button id="btn_Back" type="submit">Back</button>
+        <button id="btn_Select" type="submit">Select Customer</button>
+    </div>
+}
+

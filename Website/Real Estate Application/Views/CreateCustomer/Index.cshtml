@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+
+@section Styles {
+    <link href="~/Styles/CreateCustomer.css" rel="stylesheet" type="text/css" />
+}
+
+@using (Html.BeginForm())
+{
+    <h1>Create Customer</h1>
+    <div class="parent">
+        <div class="child">
+            <div class="input_container">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" />
+            </div>
+
+            <div class="input_container">
+                <label for="middleName">Middle Name:</label>
+                <input type="text" id="middleName" />
+            </div>
+
+            <div class="input_container">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" />
+            </div>
+
+            <div class="input_container">
+                <label for="dob">Date of Birth:</label>
+                <input type="text" id="dob" />
+            </div>
+        </div>
+        <div class="child">
+            <div class="input_container">
+                <label for="email">Email:</label>
+                <input type="text" id="email" />
+            </div>
+
+            <div class="input_container">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" id="phoneNumber" />
+            </div>
+
+            <div class="input_container">
+                <label for="streetAddress">Street Address:</label>
+                <input type="text" id="streetAddress" />
+            </div>
+
+            <div class="input_container">
+                <label for="city">City:</label>
+                <input type="text" id="city" />
+            </div>
+        </div>
+    </div>
+    <button type="submit" id="btn_Create">Create</button>
+}

@@ -1,0 +1,55 @@
+﻿@section Styles {
+    <link href="~/Styles/CustomerListings.css" rel="stylesheet" type="text/css" />
+}
+
+@section Scripts {
+    <script src="~/Scripts/table.js"></script>
+}
+
+@using (Html.BeginForm())
+{
+    <div id="container">
+        <h1>Listings for John Doe</h1>
+        <div>
+            <table>
+                <tr id="heading_row">
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Street Address</th>
+                    <th>Agent</th>
+                </tr>
+                <tr>
+                    <td>2013-08-23</td>
+                    <td>2021-08-23</td>
+                    <td>543 Queen Street</td>
+                    <td>Agent Orange</td>
+                </tr>
+                <tr>
+                    <td>2013-08-23</td>
+                    <td>2021-08-23</td>
+                    <td>544 Queen Street</td>
+                    <td>Agent Orange</td>
+                </tr>
+                <tr>
+                    <td>2013-08-23</td>
+                    <td>2021-08-23</td>
+                    <td>545 Queen Street</td>
+                    <td>Agent Orange</td>
+                </tr>
+                <tr>
+                    <td>2013-08-23</td>
+                    <td>2021-08-23</td>
+                    <td>546 Queen Street</td>
+                    <td>Agent Orange</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="btn_container">
+            <button type="submit" id="btn_Back">Back</button>
+            <button type="submit" id="btn_Add">Add Listing</button>
+            <button type="submit" id="btn_Edit">Edit Listing</button>
+        </div>
+    </div>
+}
+
