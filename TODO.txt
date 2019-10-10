@@ -1,0 +1,23 @@
+Use Case Swap:
+	E1: Upload Image
+	E2: Save Listing
+
+Create Memo:
+	About use case swap and date changes.
+
+E1 Deliverables:
+	Create Agent: 
+		Form(s) and DB
+
+	Create Customer: 
+		Form(s) and DB
+
+	Upload Image: 
+		Form(s) and DB
+
+	Project Documentation:
+		Use Cases
+		Business Rules
+		Project Plan *Done
+		Memos
+		E2 Wireframes
