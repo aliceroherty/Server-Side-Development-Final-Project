@@ -1,6 +1,6 @@
 Use Case Swap:
-	E1: Upload Image
-	E2: Save Listing
+	E1: Upload Image *Done
+	E2: Save Listing *Done
 
 Create Memo:
 	About use case swap and date changes.
@@ -16,8 +16,8 @@ E1 Deliverables:
 		Form(s) and DB
 
 	Project Documentation:
-		Use Cases
-		Business Rules
+		Use Cases 
+		Business Rules 
 		Project Plan *Done
 		Memos
 		E2 Wireframes
