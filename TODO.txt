@@ -3,7 +3,7 @@ Use Case Swap:
 	E2: Save Listing *Done
 
 Create Memo:
-	About use case swap and date changes.
+	About use case swap and date changes. *Done
 
 E1 Deliverables:
 	Create Agent: 
@@ -21,3 +21,4 @@ E1 Deliverables:
 		Project Plan *Done
 		Memos
 		E2 Wireframes
+		ERD
