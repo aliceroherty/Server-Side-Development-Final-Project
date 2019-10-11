@@ -1,4 +1,5 @@
-﻿
+﻿@model Real_Estate_Application.Models.Agent
+
 @{
     ViewBag.Title = "Index";
 }
@@ -14,73 +15,73 @@
         <div class="child">
             <div class="input_container">
                 <label for="SIN">Social Insurance Number:</label>
-                <input type="text" id="SIN" />
+                @Html.TextBoxFor(m => m.SIN, new { @id = "SIN" })
             </div>
 
             <div class="input_container">
                 <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" />
+                @Html.TextBoxFor(m => m.FirstName, new { @id="firstName" })
             </div>
 
             <div class="input_container">
                 <label for="middleName">Middle Name:</label>
-                <input type="text" id="middleName" />
+                @Html.TextBoxFor(m => m.MiddleName, new { @id = "middleName" })
             </div>
 
             <div class="input_container">
                 <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" />
+                @Html.TextBoxFor(m => m.LastName, new { @id = "lastName" })
             </div>
 
             <div class="input_container">
                 <label for="loggedInUserName">Logged In User Name:</label>
-                <input type="text" id="loggedInUserName" />
+                @Html.TextBoxFor(m => m.LoggedInUsername, new { @id = "loggedInUserName" })
             </div>
 
             <div class="input_container">
                 <label for="streetAddress">Street Address:</label>
-                <input type="text" id="streetAddress" />
+                @Html.TextBoxFor(m => m.StreetAddress, new { @id = "streetAddress" })
             </div>
 
             <div class="input_container">
                 <label for="city">City:</label>
-                <input type="text" id="city" />
+                @Html.TextBoxFor(m => m.City, new { @id = "city" })
             </div>
         </div>
         <div class="child">
             <div class="input_container">
                 <label for="province">Province:</label>
-                <input type="text" id="province" />
+                @Html.DropDownListFor(m => m.Province, new SelectList(ViewBag.Provinces), new { @id = "province" })
             </div>
 
             <div class="input_container">
                 <label for="postalCode">Postal Code:</label>
-                <input type="text" id="postalCode" />
+                @Html.TextBoxFor(m => m.PostalCode, new { @id = "postalCode" })
             </div>
 
             <div class="input_container">
                 <label for="homePhone">Home Phone:</label>
-                <input type="text" id="homePhone" />
+                @Html.TextBoxFor(m => m.HomePhone, new { @id = "homePhone" })
             </div>
 
             <div class="input_container">
                 <label for="cellPhone">Cell Phone:</label>
-                <input type="text" id="cellPhone" />
+                @Html.TextBoxFor(m => m.CellPhone, new { @id = "cellPhone" })
             </div>
 
             <div class="input_container">
                 <label for="officePhone">Office Phone:</label>
-                <input type="text" id="officePhone" />
+                @Html.TextBoxFor(m => m.OfficePhone, new { @id = "officePhone" })
             </div>
 
             <div class="input_container">
                 <label for="officeEmail">Office Email:</label>
-                <input type="text" id="officeEmail" />
+                @Html.TextBoxFor(m => m.OfficeEmail, new { @id = "officeEmail" })
             </div>
 
             <div class="input_container">
                 <label for="dateOfBirth">Date of Birth:</label>
-                <input type="text" id="dateOfBirth" />
+                @Html.TextBoxFor(m => m.DateOfBirth, new { @id = "dateOfBirth" })
             </div>
         </div>
     </div>

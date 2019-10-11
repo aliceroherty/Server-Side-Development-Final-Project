@@ -22,4 +22,6 @@ E1 Deliverables:
 		Memos
 		E2 Wireframes
 
-	E2 HTML & CSS:
+	E2 HTML & CSS
+
+	Test Data SQL Script
