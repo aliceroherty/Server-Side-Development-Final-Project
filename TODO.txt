@@ -21,4 +21,5 @@ E1 Deliverables:
 		Project Plan *Done
 		Memos
 		E2 Wireframes
-		ERD
+
+	E2 HTML & CSS:
