@@ -19,7 +19,7 @@ E1 Deliverables:
 		Use Cases 
 		Business Rules 
 		Project Plan *Done
-		Memos
+		Memos *Done
 		E2 Wireframes
 
 	E2 HTML & CSS

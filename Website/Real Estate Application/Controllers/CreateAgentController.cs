@@ -26,9 +26,18 @@ namespace Real_Estate_Application.Controllers
         public ActionResult Index(Agent agent)
         {
             context.Agents.Add(agent);
-            context.SaveChanges();
+            int rowsAffected = context.SaveChanges();
 
-            return View();
+            if (rowsAffected > 0)
+            {
+                ViewBag.Message = "Creation Successful.";
+            }
+            else
+            {
+                ViewBag.Message = "Creation Failed.";
+            }
+
+            return Index();
         }
     }
 }

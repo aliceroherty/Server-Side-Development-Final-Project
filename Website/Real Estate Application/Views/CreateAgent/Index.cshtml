@@ -14,7 +14,7 @@
     <div class="parent">
         <div class="child">
             <div class="input_container">
-                <label for="SIN">Social Insurance Number:</label>
+                <label for="SIN">SIN:</label>
                 @Html.TextBoxFor(m => m.SIN, new { @id = "SIN" })
             </div>
 
@@ -81,9 +81,10 @@
 
             <div class="input_container">
                 <label for="dateOfBirth">Date of Birth:</label>
-                @Html.TextBoxFor(m => m.DateOfBirth, new { @id = "dateOfBirth" })
+                @Html.TextBoxFor(m => m.DateOfBirth, new { @id = "dateOfBirth", @type = "date" })
             </div>
         </div>
     </div>
     <button type="submit" id="btn_Create">Create</button>
+    <h3>@ViewBag.Message</h3>
 }
