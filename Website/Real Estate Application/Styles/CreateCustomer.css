@@ -48,6 +48,12 @@ input {
     color: #3d3d3d;
 }
 
+.validation {
+    margin-bottom: 1em;
+    font-size: 1em;
+    color: #ff4133;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .parent {
         flex-direction: column !important;
@@ -101,7 +107,9 @@ input {
     }
 
     input {
-        min-width: 22em;
+        max-width: 100%;
+        height: 3em;
+        text-align: center;
     }
 
     .child {
@@ -110,6 +118,20 @@ input {
 
     #btn_Create {
         width: 60%;
+    }
+
+    .input_container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .validation {
+        margin-bottom: 0.5em;
+    }
+
+    label, .validation {
+        font-size: 2em;
     }
 }
 
@@ -120,7 +142,8 @@ input {
     }
 
     input {
-        min-width: 10em;
+        max-width: 100%;
+        height: 3em;
     }
 
     .child {
@@ -129,6 +152,20 @@ input {
 
     #btn_Create {
         width: 60%;
+    }
+
+    .input_container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .validation {
+        margin-bottom: 0.5em;
+    }
+
+    label, .validation {
+        font-size: 1.5em;
     }
 }
 
@@ -139,7 +176,8 @@ input {
     }
 
     input {
-        max-width: 13em;
+        max-width: 100%;
+        height: 3em;
     }
 
     .child {
@@ -148,6 +186,20 @@ input {
 
     #btn_Create {
         width: 60%;
+    }
+
+    .input_container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .validation {
+        margin-bottom: 0.5em;
+    }
+
+    label, .validation {
+        font-size: 1.5em;
     }
 }
 
@@ -158,7 +210,8 @@ input {
     }
 
     input {
-        max-width: 10em;
+        max-width: 100%;
+        height: 3em;
     }
 
     .child {
@@ -167,5 +220,19 @@ input {
 
     #btn_Create {
         width: 60%;
+    }
+
+    .input_container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .validation {
+        margin-bottom: 0.5em;
+    }
+
+    label, .validation {
+        font-size: 1.5em;
     }
 }

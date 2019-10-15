@@ -11,5 +11,7 @@ namespace Real_Estate_Application.Models
         public DbSet<Agent> Agents { get; set; }
 
         public DbSet<Customer> Customers { get; set; }
+
+        public DbSet<Image> Images { get; set; }
     }
 }

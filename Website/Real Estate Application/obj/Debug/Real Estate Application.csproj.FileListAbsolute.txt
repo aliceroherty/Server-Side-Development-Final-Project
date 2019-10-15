@@ -72,3 +72,6 @@ D:\WAM Senior\Fall Semester\Server-Side Web ASP.NET\Project\Website\Real Estate 
 D:\WAM Senior\Fall Semester\Server-Side Web ASP.NET\Project\Website\Real Estate Application\bin\EntityFramework.SqlServer.xml
 D:\WAM Senior\Fall Semester\Server-Side Web ASP.NET\Project\Website\Real Estate Application\obj\Debug\Real_Estate_Application.Migrations.Initial.resources
 D:\WAM Senior\Fall Semester\Server-Side Web ASP.NET\Project\Website\Real Estate Application\obj\Debug\Real Estate Application.csproj.GenerateResource.cache
+D:\WAM Senior\Fall Semester\Server-Side Web ASP.NET\Project\Website\Real Estate Application\obj\Debug\Real_Estate_Application.Migrations.UploadImage.resources
+D:\WAM Senior\Fall Semester\Server-Side Web ASP.NET\Project\Website\Real Estate Application\obj\Debug\Real_Estate_Application.Migrations.UploadImageFix.resources
+D:\WAM Senior\Fall Semester\Server-Side Web ASP.NET\Project\Website\Real Estate Application\obj\Debug\Real_Estate_Application.Migrations.UploadImageFix2.resources

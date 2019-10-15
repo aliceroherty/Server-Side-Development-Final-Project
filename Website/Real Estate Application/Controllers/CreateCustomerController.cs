@@ -22,8 +22,22 @@ namespace Real_Estate_Application.Controllers
         [HttpPost]
         public ActionResult Index(Customer customer)
         {
-            context.Customers.Add(customer);
-            context.SaveChanges();
+            if (ModelState.IsValid)
+            {
+                context.Customers.Add(customer);
+                int rowsAffected = context.SaveChanges();
+
+                if (rowsAffected > 0)
+                {
+                    ViewBag.Message = "Creation Successful.";
+                    ModelState.Clear();
+                }
+                else
+                {
+                    ViewBag.Message = "Creation Failed.";
+                    ModelState.Clear();
+                }
+            }
 
             return View();
         }

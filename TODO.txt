@@ -7,17 +7,17 @@ Create Memo:
 
 E1 Deliverables:
 	Create Agent: 
-		Form(s) and DB
+		Form(s) and DB *Done
 
 	Create Customer: 
-		Form(s) and DB
+		Form(s) and DB *Done
 
 	Upload Image: 
-		Form(s) and DB
+		Form(s) and DB *Done --Validation Issues
 
 	Project Documentation:
-		Use Cases 
-		Business Rules 
+		Use Cases *Done
+		Business Rules *Done
 		Project Plan *Done
 		Memos *Done
 		E2 Wireframes

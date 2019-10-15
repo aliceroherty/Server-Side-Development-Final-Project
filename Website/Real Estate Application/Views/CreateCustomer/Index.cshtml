@@ -1,7 +1,7 @@
 ﻿@model Real_Estate_Application.Models.Customer
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Create Customer";
 }
 
 
@@ -14,9 +14,17 @@
     <h1>Create Customer</h1>
     <div class="parent">
         <div class="child">
+            <div class="validation">
+                @Html.ValidationMessageFor(m => m.FirstName)
+            </div>
+
             <div class="input_container">
                 <label for="firstName">First Name:</label>
                 @Html.TextBoxFor(m => m.FirstName, new { @id = "firstName" })
+            </div>
+
+            <div class="validation">
+                @Html.ValidationMessageFor(m => m.MiddleName)
             </div>
 
             <div class="input_container">
@@ -24,9 +32,17 @@
                 @Html.TextBoxFor(m => m.MiddleName, new { @id = "middleName" })
             </div>
 
+            <div class="validation">
+                @Html.ValidationMessageFor(m => m.LastName)
+            </div>
+
             <div class="input_container">
                 <label for="lastName">Last Name:</label>
-                @Html.TextBoxFor(m => m.LastName, new { @id = "lastName"})
+                @Html.TextBoxFor(m => m.LastName, new { @id = "lastName" })
+            </div>
+
+            <div class="validation">
+                @Html.ValidationMessageFor(m => m.DateOfBirth)
             </div>
 
             <div class="input_container">
@@ -35,9 +51,17 @@
             </div>
         </div>
         <div class="child">
+            <div class="validation">
+                @Html.ValidationMessageFor(m => m.Email)
+            </div>
+
             <div class="input_container">
                 <label for="email">Email:</label>
                 @Html.TextBoxFor(m => m.Email, new { @id = "email" })
+            </div>
+
+            <div class="validation">
+                @Html.ValidationMessageFor(m => m.PhoneNumber)
             </div>
 
             <div class="input_container">
@@ -45,9 +69,17 @@
                 @Html.TextBoxFor(m => m.PhoneNumber, new { @id = "phoneNumber" })
             </div>
 
+            <div class="validation">
+                @Html.ValidationMessageFor(m => m.StreetAddress)
+            </div>
+
             <div class="input_container">
                 <label for="streetAddress">Street Address:</label>
                 @Html.TextBoxFor(m => m.StreetAddress, new { @id = "streetAddress" })
+            </div>
+
+            <div class="validation">
+                @Html.ValidationMessageFor(m => m.City)
             </div>
 
             <div class="input_container">
@@ -57,4 +89,5 @@
         </div>
     </div>
     <button type="submit" id="btn_Create">Create</button>
+    <h3>@ViewBag.Message</h3>
 }

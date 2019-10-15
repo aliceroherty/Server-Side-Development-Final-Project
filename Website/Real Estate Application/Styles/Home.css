@@ -1,5 +1,5 @@
 ﻿#home_img {
-    width: 100%;
+    width: 60%;
 }
 
 #stellar {
@@ -13,5 +13,17 @@
 
     #stellar {
         display: inline-block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #home_img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #home_img {
+        width: 100%;
     }
 }

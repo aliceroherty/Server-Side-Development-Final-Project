@@ -1,0 +1,36 @@
+﻿@model Real_Estate_Application.Models.Image
+
+@{
+    ViewBag.Title = "Upload Image";
+}
+
+@section Styles {
+    <link href="~/Styles/UploadImage.css" rel="stylesheet" type="text/css" />
+}
+
+@using (Html.BeginForm("index", "UploadImage", FormMethod.Post, new { @enctype = "multipart/form-data"}))
+{
+    <h1>Upload Image</h1>
+
+    <input type="file" name="file" id="file_picker"/>
+
+    @Html.ValidationMessageFor(m => m.Description)
+
+    <div class="input_container">
+        <label for="description">Description:</label>
+        @Html.TextAreaFor(m => m.Description, new { @id = "description" })
+    </div>
+
+    @Html.ValidationMessageFor(m => m.AlternativeText)
+
+    <div class="input_container">
+        <label for="alt_text">Alternative Text:</label>
+        @Html.TextBoxFor(m => m.AlternativeText, new { @id = "alt_text" })
+    </div>
+
+    <input type="submit" value="Upload" id="btn_Upload" />
+
+    <h3>@ViewBag.Message</h3>
+
+    @Html.ValidationSummary()
+}

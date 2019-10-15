@@ -22,7 +22,8 @@ namespace Real_Estate_Application.Models
         public string LastName { get; set; }
 
         [Required]
-        public DateTime DateOfBirth { get; set; }
+        [LegalAge]
+        public DateTime? DateOfBirth { get; set; }
 
         [StringLength(75)]
         public string Email { get; set; }
@@ -40,5 +41,29 @@ namespace Real_Estate_Application.Models
         public string City { get; set; }
 
         public int AgentID { get; set; }
+    }
+
+    internal class LegalAgeAttribute : ValidationAttribute
+    {
+        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+        {
+            DateTime dob = (DateTime)value;
+
+            int age = DateTime.Now.Year - dob.Year;
+
+            if (DateTime.Now.DayOfYear < dob.DayOfYear)
+            {
+                age--;
+            }
+
+            if (age < 19)
+            {
+                return new ValidationResult("The Customer must be 19 or older.");
+            }
+            else
+            {
+                return ValidationResult.Success;
+            }
+        }
     }
 }

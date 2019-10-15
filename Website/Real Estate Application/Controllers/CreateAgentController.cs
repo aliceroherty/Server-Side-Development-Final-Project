@@ -25,16 +25,21 @@ namespace Real_Estate_Application.Controllers
         [HttpPost]
         public ActionResult Index(Agent agent)
         {
-            context.Agents.Add(agent);
-            int rowsAffected = context.SaveChanges();
+            if (ModelState.IsValid)
+            {
+                context.Agents.Add(agent);
+                int rowsAffected = context.SaveChanges();
 
-            if (rowsAffected > 0)
-            {
-                ViewBag.Message = "Creation Successful.";
-            }
-            else
-            {
-                ViewBag.Message = "Creation Failed.";
+                if (rowsAffected > 0)
+                {
+                    ViewBag.Message = "Creation Successful.";
+                    ModelState.Clear();
+                }
+                else
+                {
+                    ViewBag.Message = "Creation Failed.";
+                    ModelState.Clear();
+                }
             }
 
             return Index();
