@@ -122,6 +122,7 @@
     <Content Include="Styles\SaveListingDetails.css" />
     <Content Include="Styles\SaveNewListing.css" />
     <Content Include="Styles\UploadImage.css" />
+    <Content Include="Styles\ViewListing.css" />
     <Content Include="Web.config" />
     <Content Include="Views\CreateCustomer\Index.cshtml" />
     <Content Include="Views\CreateAgent\Index.cshtml" />
@@ -134,6 +135,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SaveListingController.cs" />
     <Compile Include="Controllers\UploadImageController.cs" />
+    <Compile Include="Controllers\ViewListingController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -182,6 +184,7 @@
     <Content Include="Views\SaveListing\SaveListingDetails.cshtml" />
     <Content Include="Views\SaveListing\AddImage.cshtml" />
     <Content Include="Views\UploadImage\Index.cshtml" />
+    <Content Include="Views\ViewListing\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
