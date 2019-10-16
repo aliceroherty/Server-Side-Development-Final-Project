@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "View Showing Details";
+}
+
+@section Styles {
+    <link href="~/Styles/ShowingDetails.css" rel="stylesheet" type="text/css" />
+}
+
+@using (Html.BeginForm())
+{
+<h2>Showing Details</h2>
+
+<div class="parent">
+    <div class="child">
+        <div class="input_container">
+            <label>Customer:</label>
+            <label>Joe Dirt</label>
+        </div>
+
+        <div class="input_container">
+            <div class="input_container">
+                <label>Customer:</label>
+                <label>Joe Dirt</label>
+            </div>
+        </div>
+
+        <div class="input_container">
+            <div class="input_container">
+                <label>Customer:</label>
+                <label>Joe Dirt</label>
+            </div>
+        </div>
+
+        <div class="input_container">
+            <div class="input_container">
+                <label>Customer:</label>
+                <label>Joe Dirt</label>
+            </div>
+        </div>
+
+        <div class="input_container">
+            <div class="input_container">
+                <label>Customer:</label>
+                <label>Joe Dirt</label>
+            </div>
+        </div>
+
+        <div class="input_container">
+            <div class="input_container">
+                <label>Customer:</label>
+                <label>Joe Dirt</label>
+            </div>
+        </div>
+    </div>
+    <div class="child">
+        <div class="listing">
+            <img src="~/Images/logo.png" alt="listing_image" class="listing_img" />
+            <div class="description_container">
+                <div class="description">
+                    <section class="description_label">Listing Price:</section>
+                    <section class="description_value">$200,000.00</section>
+                </div>
+                <div class="description">
+                    <section class="description_label">Listing Agent:</section>
+                    <section class="description_value">Joe Dirt</section>
+                </div>
+                <div class="description">
+                    <section class="description_label">Square Footage:</section>
+                    <section class="description_value">250sqft</section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<input id="btn_Create" type="submit" />
+}
+

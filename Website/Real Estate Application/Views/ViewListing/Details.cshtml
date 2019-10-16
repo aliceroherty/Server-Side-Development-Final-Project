@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "Listing Details";
+}
+
+@section Styles {
+    <link href="~/Styles/ListingDetails.css" rel="stylesheet" type="text/css" />    
+}
+
+<h2>Listing Details</h2>
+
+<div id="container">
+    <div class="parent" id="images_features">
+        <!--Image-->
+        <div class="child" id="images">
+            <img src="~/Images/logo.png" alt="Main_Image" id="main_img" />
+            <div id="secondary_images">
+                <img src="~/Images/logo.png" alt="Secondary_Image" class="secondary_img" />
+                <img src="~/Images/logo.png" alt="Secondary_Image" class="secondary_img" />
+                <img src="~/Images/logo.png" alt="Secondary_Image" class="secondary_img" />
+                <img src="~/Images/logo.png" alt="Secondary_Image" class="secondary_img" />
+                <img src="~/Images/logo.png" alt="Secondary_Image" class="secondary_img" />
+            </div>
+        </div>
+        <!--Property Features-->
+        <div class="child" id="features">
+            <h3 id="features_title">Property Features:</h3>
+            <h4 id="features_value">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget velit ut nulla suscipit mattis eu sit amet dui. Nulla sollicitudin odio ut interdum dignissim. Nullam sem est, feugiat vel condimentum eu, pellentesque non risus. Fusce vitae mattis lorem. Pellentesque posuere efficitur lorem in rutrum. Morbi eget lacus fermentum, varius leo accumsan, scelerisque leo. Suspendisse non pharetra justo. Pellentesque lorem metus, euismod in mauris et, varius fermentum nunc. Nunc ac vestibulum arcu. Cras mollis pretium sodales. Lorem ipsum dolor sit amet.</h4>
+        </div>
+    </div>
+    <div class="parent" id="information">
+        <!--Listing Info-->
+        <div class="child" id="listing_info">
+            <!--containers to allow two rows-->
+            <div class="info_container">
+                <!--div for each piece of info-->
+                <div class="info">
+                    <section>Bedrooms:</section>
+                    <section>3</section>
+                </div>
+                <div class="info">
+                    <section>Bathrooms:</section>
+                    <section>3</section>
+                </div>
+                <div class="info">
+                    <section>Price:</section>
+                    <section>$200 000.00</section>
+                </div>
+            </div>
+            <div class="info_container">
+                <div class="info">
+                    <section>Square Footage:</section>
+                    <section>1500 ft&sup2;</section>
+                </div>
+                <div class="info">
+                    <section>City:</section>
+                    <section>Moncton</section>
+                </div>
+                <div class="info">
+                    <section>Area:</section>
+                    <section>Downtown</section>
+                </div>
+            </div>
+        </div>
+        <!--Agent Info-->
+        <div class="child" id="agent_information">
+            <div class="agent_info">
+                <section>Agent:</section>
+                <section>John Doe</section>
+            </div>
+            <div class="agent_info">
+                <section>Office:</section>
+                <section>1-506-522-8236</section>
+            </div>
+            <div class="agent_info">
+                <section>Email:</section>
+                <section>JohnDoe@RealEstate.com</section>
+            </div>
+        </div>
+    </div>
+</div>

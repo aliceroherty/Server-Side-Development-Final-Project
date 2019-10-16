@@ -8,61 +8,73 @@
 
 <h2>View listing</h2>
 
-<div id="container">
-    <div class="parent" id="search">
-        @using (Html.BeginForm())
-        {
-            <input type="text" id="city" class="form-control"/>
-            <input type="text" id="province" class="form-control"/>
-            <input type="text" id="minPrice" class="form-control"/>
-            <input type="text" id="maxPrice" class="form-control"/>
-            <input type="text" id="beds" class="form-control"/>
-            <input type="text" id="baths" class="form-control"/>
-            <input type="text" id="sort" class="form-control"/>
+@using (Html.BeginForm())
+{
+    <div id="container">
+        <div class="parent" id="search">
+            <input type="text" id="city" class="form-control" placeholder="City"/>
+            <input type="text" id="province" class="form-control" placeholder="Province"/>
+            <input type="text" id="minPrice" class="form-control" placeholder="Min Price"/>
+            <input type="text" id="maxPrice" class="form-control" placeholder="Max Price"/>
+            <input type="text" id="beds" class="form-control" placeholder="Bedrooms"/>
+            <input type="text" id="baths" class="form-control" placeholder="Bathrooms"/>
+            <input type="text" id="sort" class="form-control" placeholder="Sort By"/>
             <input type="submit" id="btn_Search" class="form-control" value="Search" />
-        }
-    </div>
-    <div class="parent" id="results">
-        <div class="listing_container">
+        </div>
+        <div class="parent" id="results">
             <div class="listing">
-                <div id="img_container">
-                    <img src="~/Images/logo.png" alt="listing_image" class="listing_img" />
-                </div>
+                <img src="~/Images/logo.png" alt="listing_image" class="listing_img" />
                 <div class="description_container">
                     <div class="description">
-                        <section>Listing Price:</section>
-                        <section>$200,000.00</section>
+                        <section class="description_label">Listing Price:</section>
+                        <section class="description_value">$200,000.00</section>
                     </div>
                     <div class="description">
-                        <section>Listing Agent:</section>
-                        <section>Joe Dirt</section>
+                        <section class="description_label">Listing Agent:</section>
+                        <section class="description_value">Joe Dirt</section>
                     </div>
                     <div class="description">
-                        <section>Square Footage:</section>
-                        <section>250sqft</section>
+                        <section class="description_label">Square Footage:</section>
+                        <section class="description_value">250sqft</section>
                     </div>
                 </div>
             </div>
 
             <div class="listing">
-                <div id="img_container">
-                    <img src="~/Images/logo.png" alt="listing_image" class="listing_img" />
-                </div>
+                <img src="~/Images/logo.png" alt="listing_image" class="listing_img" />
                 <div class="description_container">
                     <div class="description">
-                        <section>Listing Price:</section>
-                        <section>$200,000.00</section>
+                        <section class="description_label">Listing Price:</section>
+                        <section class="description_value">$180,000.00</section>
                     </div>
                     <div class="description">
-                        <section>Listing Agent:</section>
-                        <section>Joe Dirt</section>
+                        <section class="description_label">Listing Agent:</section>
+                        <section class="description_value">Joe Dirt</section>
                     </div>
                     <div class="description">
-                        <section>Square Footage:</section>
-                        <section>250sqft</section>
+                        <section class="description_label">Square Footage:</section>
+                        <section class="description_value">250sqft</section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="listing">
+                <img src="~/Images/logo.png" alt="listing_image" class="listing_img" />
+                <div class="description_container">
+                    <div class="description">
+                        <section class="description_label">Listing Price:</section>
+                        <section class="description_value">$180,000.00</section>
+                    </div>
+                    <div class="description">
+                        <section class="description_label">Listing Agent:</section>
+                        <section class="description_value">Joe Dirt</section>
+                    </div>
+                    <div class="description">
+                        <section class="description_label">Square Footage:</section>
+                        <section class="description_value">250sqft</section>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+}

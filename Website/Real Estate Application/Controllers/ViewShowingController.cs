@@ -6,18 +6,28 @@ using System.Web.Mvc;
 
 namespace Real_Estate_Application.Controllers
 {
-    public class ViewListingController : Controller
+    public class ViewShowingController : Controller
     {
-        // GET: ViewListing
-        [HttpGet]
+        // GET: ViewShowing
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: Listing Details
-        [HttpGet]
+        // GET: ShowingDetails
         public ActionResult Details()
+        {
+            return View();
+        }
+
+        // GET: CreateShowing
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        // GET: ViewShowing
+        public ActionResult Update()
         {
             return View();
         }

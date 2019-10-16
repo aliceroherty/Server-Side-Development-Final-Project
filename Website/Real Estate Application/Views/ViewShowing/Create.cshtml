@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+@section Styles {
+    <link href="~/Styles/CreateShowing.css" rel="stylesheet" type="text/css" />
+}
+
+@using (Html.BeginForm())
+{
+<h2>Create Showing</h2>
+
+<div class="parent">
+    <div class="input_container">
+        <label for="cust">Customer:</label>
+        <select name="customers" id="cust">
+            <option value="placeholder">--Select a Customer--</option>
+            <option value="cust1">Joe Dirt</option>
+        </select>
+    </div>
+
+    <div class="input_container">
+        <label for="select">Agents:</label>
+        <select name="agents" id="select">
+            <option value="placeholder">--Select an Agent--</option>
+            <option value="agent1">John Doe</option>
+        </select>
+    </div>
+
+    <div class="input_container">
+        <label for="date">Date:</label>
+        <input type="text" name="date">
+    </div>
+
+    <div class="input_container">
+        <label for="sTime">Start Time:</label>
+        <input type="text" name="sTime">
+    </div>
+
+    <div class="input_container">
+        <label for="eTime">End Time:</label>
+        <input type="text" name="eTime">
+    </div>
+
+    <div class="input_container">
+        <label for="comms">Comments:</label>
+        <textarea rows="8" cols="50" id="comms"></textarea>
+    </div>
+    <input id="btn_Create"type="submit"/>
+</div>
+}
+

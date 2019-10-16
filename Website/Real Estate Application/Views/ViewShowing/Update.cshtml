@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "Update";
+}
+
+@section Styles {
+    <link href="~/Styles/UpdateShowing.css" rel="stylesheet" type="text/css" />
+}
+
+@using (Html.BeginForm())
+{
+<h2>Update Showing</h2>
+
+<div class="parent">
+    <div class="child">
+        <div class="input_container">
+            <label for="cust">Customer:</label>
+            <select name="customers" id="cust">
+                <option value="placeholder">--Select a Customer--</option>
+                <option value="cust1">Joe Dirt</option>
+            </select>
+        </div>
+
+        <div class="input_container">
+            <label for="select">Agents:</label>
+            <select name="agents" id="select">
+                <option value="placeholder">--Select an Agent--</option>
+                <option value="agent1">John Doe</option>
+            </select>
+        </div>
+
+        <div class="input_container">
+            <label for="date">Date:</label>
+            <input type="text" name="date">
+        </div>
+
+        <div class="input_container">
+            <label for="sTime">Start Time:</label>
+            <input type="text" name="sTime">
+        </div>
+
+        <div class="input_container">
+            <label for="eTime">End Time:</label>
+            <input type="text" name="eTime">
+        </div>
+
+        <div class="input_container">
+            <label for="comms">Comments:</label>
+            <textarea rows="8" cols="50" id="comms"></textarea>
+        </div>
+    </div>
+    <div class="child">
+        <div class="listing">
+                <img src="~/Images/logo.png" alt="listing_image" class="listing_img" />
+                <div class="description_container">
+                    <div class="description">
+                        <section class="description_label">Listing Price:</section>
+                        <section class="description_value">$200,000.00</section>
+                    </div>
+                    <div class="description">
+                        <section class="description_label">Listing Agent:</section>
+                        <section class="description_value">Joe Dirt</section>
+                    </div>
+                    <div class="description">
+                        <section class="description_label">Square Footage:</section>
+                        <section class="description_value">250sqft</section>
+                    </div>
+                </div>
+        </div>
+    </div>
+        
+
+</div>
+
+<input id="btn_Create" type="submit" />
+}
+

@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "Search Showings";
+}
+
+@section Styles {
+    <link href="~/Styles/ViewShowing.css" rel="stylesheet" type="text/css" />
+}
+
+<h2>Search Showings</h2>
+
+@using (Html.BeginForm())
+{
+<div id="container">
+    <div class="parent" id="search">
+        <input type="text" id="agent" class="form-control" placeholder="Listing Agent" />
+        <input type="text" id="date" class="form-control" placeholder="Showing Date" />
+        <input type="submit" id="btn_Search" class="form-control" value="Search" />
+        <input type="submit" id="btn_New" class="form-control" value="New Showing" />
+    </div>
+    <div class="parent" id="results">
+        <div class="listing">
+            <div class="description_container">
+                <div class="description">
+                    <section class="description_label">Showing Date:</section>
+                    <section class="description_value">yyyy/mm/dd     hh:mm:ss</section>
+                </div>
+                <div class="description">
+                    <section class="description_label">Listing Agent:</section>
+                    <section class="description_value">Joe Dirt</section>
+                </div>
+            </div>
+        </div>
+
+        <div class="listing">
+            <div class="description_container">
+                <div class="description">
+                    <section class="description_label">Showing Date:</section>
+                    <section class="description_value">yyyy/mm/dd     hh:mm:ss</section>
+                </div>
+                <div class="description">
+                    <section class="description_label">Listing Agent:</section>
+                    <section class="description_value">Joe Dirt</section>
+                </div>
+            </div>
+        </div>
+        <div class="listing">
+            <div class="description_container">
+                <div class="description">
+                    <section class="description_label">Showing Date:</section>
+                    <section class="description_value">yyyy/mm/dd     hh:mm:ss</section>
+                </div>
+                <div class="description">
+                    <section class="description_label">Listing Agent:</section>
+                    <section class="description_value">Joe Dirt</section>
+                </div>
+            </div>
+        </div>
+        <div class="listing">
+            <div class="description_container">
+                <div class="description">
+                    <section class="description_label">Showing Date:</section>
+                    <section class="description_value">yyyy/mm/dd     hh:mm:ss</section>
+                </div>
+                <div class="description">
+                    <section class="description_label">Listing Agent:</section>
+                    <section class="description_value">Joe Dirt</section>
+                </div>
+            </div>
+        </div>
+        <div class="listing">
+            <div class="description_container">
+                <div class="description">
+                    <section class="description_label">Showing Date:</section>
+                    <section class="description_value">yyyy/mm/dd     hh:mm:ss</section>
+                </div>
+                <div class="description">
+                    <section class="description_label">Listing Agent:</section>
+                    <section class="description_value">Joe Dirt</section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+}
