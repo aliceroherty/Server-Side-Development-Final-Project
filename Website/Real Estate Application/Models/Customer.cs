@@ -47,20 +47,27 @@ namespace Real_Estate_Application.Models
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
-            DateTime dob = (DateTime)value;
-
-            int age = DateTime.Now.Year - dob.Year;
-
-            if (DateTime.Now.DayOfYear < dob.DayOfYear)
+            try
             {
-                age--;
-            }
+                DateTime dob = (DateTime)value;
 
-            if (age < 19)
-            {
-                return new ValidationResult("The Customer must be 19 or older.");
+                int age = DateTime.Now.Year - dob.Year;
+
+                if (DateTime.Now.DayOfYear < dob.DayOfYear)
+                {
+                    age--;
+                }
+
+                if (age < 19)
+                {
+                    return new ValidationResult("The Customer must be 19 or older.");
+                }
+                else
+                {
+                    return ValidationResult.Success;
+                }
             }
-            else
+            catch
             {
                 return ValidationResult.Success;
             }

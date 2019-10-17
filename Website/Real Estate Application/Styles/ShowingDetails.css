@@ -1,10 +1,7 @@
-﻿select {
-    color: black;
-}
-
-.child {
+﻿.child {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .listing {
@@ -15,10 +12,10 @@
     margin-left: auto;
     background-color: grey;
     padding: 1em;
-    width: 75%;
+    width: 95%;
     border-radius: 1em;
     border: 2px solid lightgrey;
-    transition: background-color ease-in-out 300ms, color ease-in-out 300ms;
+    transition: background-color ease-in-out 300ms, color ease-in-out 300ms, transform ease-in-out 200ms;
 }
 
 .listing_img {
@@ -36,10 +33,10 @@
 .description {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-left: 1em;
+    justify-content: space-between;
+    margin-left: 1.5em;
     font-size: 1.5em;
-    width: 100%;
+    width: 90%;
 }
 
 .description_label {
@@ -49,6 +46,7 @@
 .listing:hover {
     background-color: dimgrey;
     color: #b8b8b8;
+    transform: translateY(-0.25em);
 }
 
 .parent {
@@ -65,20 +63,13 @@
     justify-content: space-between;
     margin-top: 2em;
     width: 100%;
+    font-size: 1.5em;
 }
 
-textarea {
-    vertical-align: top;
-}
-
-input, select, textarea {
+#btn_Edit {
     min-width: 80%;
-}
-
-#btn_Create {
-    width: 50%;
     color: black;
-    margin: 2em auto 0 auto;
+    margin: 0.5em auto 0 auto;
     height: 3.5em;
     border: none;
     border-radius: 3em;
@@ -87,17 +78,96 @@ input, select, textarea {
     transition: background-color ease-in-out 200ms;
 }
 
-    #btn_Create:hover {
-        background-color: #b8b8b8;
-        color: #3d3d3d;
+#btn_Edit:hover {
+    background-color: #b8b8b8;
+    color: #3d3d3d;
+}
+
+@media only screen and (min-width: 991px) and (max-width:1200px) {
+    .description_container {
+        width: 80%;
     }
 
-@media only screen and (max-width:1200px) {
-    input, textarea, select {
-        width: 70%;
+    .description {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .description_label {
+        margin: 0;
+    }
+
+    .listing_img {
+        float: none;
+        width: 80%;
     }
 
     .listing {
-        width: 65%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .input_container {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 0.5em;
+    }
+
+    .parent {
+        flex-direction: column;
+    }
+
+    .child {
+        width: 100%;
+    }
+
+    #listing_container {
+        margin-top: 1.5em;
+        width: 100%;
+    }
+
+    .listing {
+        width: 100%;
+    }
+
+    .description_container {
+        width: 80%;
+    }
+
+    .description {
+        margin: 0;
+        width: 100%;
+        border-bottom: solid 0.1em #fff;
+    }
+
+    .description_label {
+        margin: 0;
+    }
+
+    .listing_img {
+        float: none;
+        width: 80%;
+        margin-bottom: 1em;
+    }
+
+    .listing {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btn_Edit {
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .description {
+        font-size: 1.25em;
     }
 }

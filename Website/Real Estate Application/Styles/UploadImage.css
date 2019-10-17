@@ -7,10 +7,9 @@
     font-size: 1.5em;
     font-weight: bold;
     transition: background-color ease-in-out 200ms;
-    margin-top: 1em;
 }
 
-#btn_Create:hover {
+#btn_Upload:hover {
     background-color: #b8b8b8;
     color: #3d3d3d;
 }
@@ -31,13 +30,9 @@ form {
 .input_container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-
-span {
-    color: #ff4133;
-    margin-top: 1em;
+    justify-content: space-between;
+    width: 40%;
+    margin-bottom: 1em;
 }
 
 #alt_text, #description {
@@ -48,4 +43,44 @@ span {
 
 label {
     margin-right: 1em;
+}
+
+input, textarea {
+    width: 60%;
+}
+
+.field-validation-error {
+    margin-bottom: 1em;
+    font-size: 1em;
+    color: #ff4133;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 992px) {
+    .input_container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    input, textarea {
+        min-width: 100%;
+    }
+
+    #file_picker {
+        min-width: 40%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .input_container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    input, textarea {
+        min-width: 100%;
+    }
+
+    #file_picker {
+        text-align: left;
+    }
 }

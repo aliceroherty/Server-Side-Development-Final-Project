@@ -83,7 +83,7 @@
 
             <div class="input_container">
                 <label for="province">Province:</label>
-                @Html.DropDownListFor(m => m.Province, new SelectList(ViewBag.Provinces), new { @id = "province"})
+                @Html.DropDownListFor(m => m.Province, new SelectList(ViewBag.Provinces), new { @id = "province" })
             </div>
 
             <div class="validation">
@@ -142,5 +142,9 @@
         </div>
     </div>
     <button type="submit" id="btn_Create">Create</button>
-    <h3>@ViewBag.Message</h3>
+
+    if (ViewBag.Message != null)
+    {
+        <h3>@ViewBag.Message</h3>
+    }
 }

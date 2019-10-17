@@ -89,5 +89,9 @@
         </div>
     </div>
     <button type="submit" id="btn_Create">Create</button>
-    <h3>@ViewBag.Message</h3>
+
+    if (ViewBag.Message != null)
+    {
+        <h3>@ViewBag.Message</h3>
+    }
 }

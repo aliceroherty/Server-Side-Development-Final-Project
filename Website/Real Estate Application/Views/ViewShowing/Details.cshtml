@@ -7,75 +7,52 @@
     <link href="~/Styles/ShowingDetails.css" rel="stylesheet" type="text/css" />
 }
 
-@using (Html.BeginForm())
-{
 <h2>Showing Details</h2>
 
-<div class="parent">
-    <div class="child">
-        <div class="input_container">
-            <label>Customer:</label>
-            <label>Joe Dirt</label>
-        </div>
-
-        <div class="input_container">
+@using (Html.BeginForm("Update", "ViewShowing", FormMethod.Get))
+{
+    <div class="parent">
+        <div class="child">
             <div class="input_container">
                 <label>Customer:</label>
                 <label>Joe Dirt</label>
             </div>
-        </div>
 
-        <div class="input_container">
             <div class="input_container">
-                <label>Customer:</label>
-                <label>Joe Dirt</label>
+                <label>Date:</label>
+                <label>October 17th, 2019</label>
+            </div>
+
+            <div class="input_container">
+                <label>Time:</label>
+                <label>2:30PM</label>
+            </div>
+
+            <div class="input_container">
+                <label>Comments:</label>
+                <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum odio cursus odio laoreet euismod. Pellentesque faucibus varius dictum. Duis nec pulvinar ante. Nullam eleifend finibus egestas. Vestibulum fringilla non leo ac molestie. Suspendisse vehicula non neque at tempus. Etiam faucibus erat in libero condimentum, mollis auctor dolor iaculis. Mauris quis pharetra velit, at feugiat purus. Curabitur elit purus, porta et condimentum quis, faucibus sit amet purus. Proin eu turpis pellentesque, accumsan tortor vel, rutrum sapien.</label>
             </div>
         </div>
-
-        <div class="input_container">
-            <div class="input_container">
-                <label>Customer:</label>
-                <label>Joe Dirt</label>
-            </div>
-        </div>
-
-        <div class="input_container">
-            <div class="input_container">
-                <label>Customer:</label>
-                <label>Joe Dirt</label>
-            </div>
-        </div>
-
-        <div class="input_container">
-            <div class="input_container">
-                <label>Customer:</label>
-                <label>Joe Dirt</label>
-            </div>
-        </div>
-    </div>
-    <div class="child">
-        <div class="listing">
-            <img src="~/Images/logo.png" alt="listing_image" class="listing_img" />
-            <div class="description_container">
-                <div class="description">
-                    <section class="description_label">Listing Price:</section>
-                    <section class="description_value">$200,000.00</section>
-                </div>
-                <div class="description">
-                    <section class="description_label">Listing Agent:</section>
-                    <section class="description_value">Joe Dirt</section>
-                </div>
-                <div class="description">
-                    <section class="description_label">Square Footage:</section>
-                    <section class="description_value">250sqft</section>
+        <div class="child">
+            <div class="listing">
+                <img src="~/Images/logo.png" alt="listing_image" class="listing_img" />
+                <div class="description_container">
+                    <div class="description">
+                        <section class="description_label">Listing Price:</section>
+                        <section class="description_value">$200,000.00</section>
+                    </div>
+                    <div class="description">
+                        <section class="description_label">Listing Agent:</section>
+                        <section class="description_value">Joe Dirt</section>
+                    </div>
+                    <div class="description">
+                        <section class="description_label">Square Footage:</section>
+                        <section class="description_value">250sqft</section>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-</div>
-
-<input id="btn_Create" type="submit" />
+    <input type="submit" id="btn_Edit" value="Edit" />
 }
-

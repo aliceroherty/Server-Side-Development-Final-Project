@@ -8,11 +8,11 @@
     <link href="~/Styles/UploadImage.css" rel="stylesheet" type="text/css" />
 }
 
-@using (Html.BeginForm("index", "UploadImage", FormMethod.Post, new { @enctype = "multipart/form-data"}))
+@using (Html.BeginForm("index", "UploadImage", FormMethod.Post, new { @enctype = "multipart/form-data" }))
 {
     <h1>Upload Image</h1>
 
-    <input type="file" name="file" id="file_picker"/>
+    <input type="file" name="file" id="file_picker" />
 
     @Html.ValidationMessageFor(m => m.Description)
 
@@ -30,7 +30,8 @@
 
     <input type="submit" value="Upload" id="btn_Upload" />
 
-    <h3>@ViewBag.Message</h3>
-
-    @Html.ValidationSummary()
+    if (ViewBag.Message != null)
+    {
+        <h3>@ViewBag.Message</h3>
+    }
 }
