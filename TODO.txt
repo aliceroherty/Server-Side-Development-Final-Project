@@ -20,8 +20,8 @@ E1 Deliverables:
 		Business Rules *Done
 		Project Plan *Done
 		Memos *Done
-		E2 Wireframes
+		E2 Wireframes ******
 
-	E2 HTML & CSS
+	E2 HTML & CSS *Done
 
-	Test Data SQL Script
+	Test Data SQL Script *****
